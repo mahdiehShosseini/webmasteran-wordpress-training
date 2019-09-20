@@ -1,0 +1,72 @@
+#buttons{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 400px;
+    height: 400px;
+}
+#blue-btn{
+    width: 50px;
+    height: 50px;}
+#green-btn{
+    width: 50px;
+    height: 50px;}
+#red-btn{
+    width: 50px;
+    height: 50px;}
+#default{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#heart {
+    position: relative;
+
+}
+#heart:before, #heart:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 70px;
+    height: 115px;
+    background: #000000;
+}
+
+#heart:before {
+    left: 70px;
+}
+#heart:after {
+    left: 0;
+}
+
+
+#heart:before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+}
+
+#heart:after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform-origin :100% 100%;
+    -moz-transform-origin :100% 100%;
+    -webkit-transform-origin :100% 100%;
+    -o-transform-origin :100% 100%;
+    -ms-transform-origin :100% 100%;
+}
+
+#heart:before, #heart:after {
+    border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+}
